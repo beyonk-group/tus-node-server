@@ -109,20 +109,21 @@ app.listen(3000, (err) => {
 - [`@tus/s3-store`][]. Store files on AWS S3.
 - [`@tus/gcs-store`][]. Store files on Google Cloud Storage.
 - [`@tus/azure-store`][]. Store files on Azure.
+- [`@tus/bunny-store`][]. Store files on Bunny.net Edge Storage.
 
 ## Extensions
 
 The tus protocol supports optional [extensions][]. Below is a table of the supported
 extensions.
 
-| Extension                | [`file-store`][`@tus/file-store`] | [`s3-store`][`@tus/s3-store`] | [`gcs-store`][`@tus/gcs-store`] | [`azure-store`][`@tus/azure-store`] |
-| ------------------------ | --------------------------------- | ----------------------------- | ------------------------------- | ----------------------------------- |
-| [Creation][]             | ✅                                | ✅                            | ✅                              | ✅                                  |
-| [Creation With Upload][] | ✅                                | ✅                            | ✅                              | ✅                                  |
-| [Expiration][]           | ✅                                | ✅                            | ❌                              | ❌                                  |
-| [Checksum][]             | ❌                                | ❌                            | ❌                              | ❌                                  |
-| [Termination][]          | ✅                                | ✅                            | ❌                              | ❌                                  |
-| [Concatenation][]        | ❌                                | ❌                            | ❌                              | ❌                                  |
+| Extension                | [`file-store`][`@tus/file-store`] | [`s3-store`][`@tus/s3-store`] | [`gcs-store`][`@tus/gcs-store`] | [`azure-store`][`@tus/azure-store`] | [`bunny-store`][`@tus/bunny-store`] |
+| ------------------------ | --------------------------------- | ----------------------------- | ------------------------------- | ----------------------------------- | ----------------------------------- |
+| [Creation][]             | ✅                                | ✅                            | ✅                              | ✅                                  | ✅                                  |
+| [Creation With Upload][] | ✅                                | ✅                            | ✅                              | ✅                                  | ✅                                  |
+| [Expiration][]           | ✅                                | ✅                            | ❌                              | ❌                                  | ❌                                  |
+| [Checksum][]             | ❌                                | ❌                            | ❌                              | ❌                                  | ❌                                  |
+| [Termination][]          | ✅                                | ✅                            | ❌                              | ❌                                  | ❌                                  |
+| [Concatenation][]        | ❌                                | ❌                            | ❌                              | ❌                                  | ❌                                  |
 
 ## Types
 

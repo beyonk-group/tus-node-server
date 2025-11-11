@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@tus/bunny-store",
+  "version": "0.1.0",
+  "description": "Bunny.net store for @tus/server",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "type": "module",
+  "homepage": "https://github.com/tus/tus-node-server#readme",
+  "bugs": "https://github.com/tus/tus-node-server/issues",
+  "repository": "tus/tus-node-server",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "!test*"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "pretest": "tsc --build",
+    "test": "mocha './dist/test/*.js' --exit --timeout 30000"
+  },
+  "dependencies": {
+    "@tus/utils": "^0.6.0",
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "@bunny.net/storage-sdk": "^0.3.0",
+    "@tus/server": "^2.0.0",
+    "@types/debug": "^4.1.12",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^22.13.7",
+    "mocha": "^11.0.1",
+    "should": "^13.2.3"
+  },
+  "peerDependencies": {
+    "@bunny.net/storage-sdk": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
