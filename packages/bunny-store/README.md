@@ -1,4 +1,4 @@
-# `@tus/bunny-store`
+# `@beyonk/tus-bunny-store`
 
 > 👉 **Note**: since 1.0.0 packages are split and published under the `@tus` scope. The
 > old package, `tus-node-server`, is considered unstable and will only receive security
@@ -20,14 +20,14 @@
 In Node.js >=20.19.0, install with npm:
 
 ```bash
-npm install @tus/bunny-store @bunny.net/storage-sdk
+npm install @beyonk/tus-bunny-store @bunny.net/storage-sdk
 ```
 
 ## Use
 
 ```js
 import { Server } from "@tus/server";
-import { BunnyStore } from "@tus/bunny-store";
+import { BunnyStore } from "@beyonk/tus-bunny-store";
 import * as BunnyStorageSDK from "@bunny.net/storage-sdk";
 
 const storageZone = BunnyStorageSDK.zone.connect_with_accesskey(
@@ -60,9 +60,9 @@ The storage zone instance created using `BunnyStorageSDK.zone.connect_with_acces
 ## Extensions
 
 The tus protocol supports optional [extensions][]. Below is a table of the supported
-extensions in `@tus/bunny-store`.
+extensions in `@beyonk/tus-bunny-store`.
 
-| Extension                | `@tus/bunny-store` |
+| Extension                | `@beyonk/tus-bunny-store` |
 | ------------------------ | ------------------ |
 | [Creation][]             | ✅                 |
 | [Creation With Upload][] | ✅                 |

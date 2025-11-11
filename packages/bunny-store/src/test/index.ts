@@ -2,7 +2,7 @@ import path from 'node:path'
 
 import * as BunnyStorageSDK from '@bunny.net/storage-sdk'
 
-import {BunnyStore} from '@tus/bunny-store'
+import {BunnyStore} from '@beyonk/tus-bunny-store'
 
 import * as shared from '../../../utils/dist/test/stores.js'
 

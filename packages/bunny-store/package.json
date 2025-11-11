@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@tus/bunny-store",
+  "name": "@beyonk/tus-bunny-store",
   "version": "0.1.0",
   "description": "Bunny.net store for @tus/server",
   "main": "./dist/index.js",
